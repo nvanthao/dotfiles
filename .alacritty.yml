@@ -59,4 +59,4 @@ shell:
   args:
     - -l
     - -c
-    - '/usr/local/bin/tmux attach || /usr/local/bin/tmux'
+    - '/opt/homebrew/bin/tmux attach || /opt/homebrew/bin/tmux'

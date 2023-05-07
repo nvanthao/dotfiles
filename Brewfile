@@ -14,10 +14,8 @@ brew 'azure-cli'
 brew 'bash'                 # Latest Bash version
 brew 'broot'                # Like tree but better
 brew 'coreutils'            # Those that come with macOS are outdated
-brew 'docker'
 brew 'fd'
 brew 'findutils'
-brew 'fq'
 brew 'gh'
 brew 'git'
 brew 'gnu-sed'
@@ -38,6 +36,7 @@ brew 'ssh-copy-id'
 brew 'the_silver_searcher'
 brew 'vim'
 brew 'tfswitch'
+brew 'tmux'
 brew 'yarn'
 brew 'z'
 
@@ -49,18 +48,14 @@ cask 'alacritty'
 cask 'docker'
 cask 'google-chrome'
 cask 'google-cloud-sdk'
-cask 'google-drive-file-stream'
 cask 'github'
-cask 'iterm2'
 cask 'maccy'                # Clipboard manager
 cask 'postman'
 cask 'proxyman'
 cask 'rectangle'
 cask 'sentinel'
-cask 'slack'
 cask 'visual-studio-code'
 cask 'wireshark'
-cask 'zoom'
 
 
 # Fonts 

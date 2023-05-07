@@ -58,24 +58,21 @@ untargz() {
 }
 
 autoload -U +X bashcompinit && bashcompinit
-complete -o nospace -C /usr/local/bin/terraform terraform
-
-source /Users/gerard/.config/broot/launcher/bash/br
 
 # Env
 # For ProxyMan
 # export http_proxy=http://127.0.0.1:9090
 # For GCP
-export GOOGLE_APPLICATION_CREDENTIALS=$HOME/gerard-gcp-credential.json
+# export GOOGLE_APPLICATION_CREDENTIALS=$HOME/gerard-gcp-credential.json
 
 # gcloud
-source "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc"
-source "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc"
+# source "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc"
+# source "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc"
 
 # Terraform
-export TERRAFORM_CONFIG=$HOME/.terraform.d/credentials.tfrc.json
+# export TERRAFORM_CONFIG=$HOME/.terraform.d/credentials.tfrc.json
 # added by travis gem
-[ ! -s /Users/gerard/.travis/travis.sh ] || source /Users/gerard/.travis/travis.sh
+# [ ! -s /Users/gerard/.travis/travis.sh ] || source /Users/gerard/.travis/travis.sh
 
 # Pet CLI Snippet Manager
 # Remember previous command
@@ -93,10 +90,5 @@ precmd() {
   echo -ne "\e]1;${PWD##*/}\a"
 }
 
-# The next line updates PATH for the Google Cloud SDK.
-if [ -f '/Users/gerard/Downloads/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/gerard/Downloads/google-cloud-sdk/path.zsh.inc'; fi
-
-# The next line enables shell command completion for gcloud.
-if [ -f '/Users/gerard/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/gerard/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
-
+# Auto completion for Nomad
 complete -o nospace -C /usr/local/bin/nomad nomad
