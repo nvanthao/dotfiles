@@ -54,12 +54,15 @@ brew 'z'
 
 # Apps
 cask 'alacritty'
+cask 'flameshot'
 cask 'google-chrome'
 cask 'google-cloud-sdk'
 cask 'github'
 cask 'maccy'                # Clipboard manager
+cask 'macdown'
 cask 'multipass'
 cask 'nordpass'
+cask 'orbstack'
 cask 'postman'
 cask 'proxyman'
 cask 'sentinel'
