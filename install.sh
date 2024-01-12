@@ -41,6 +41,6 @@ for i in "${to_be_symlink[@]}"; do
 done 
 
 # Update CLI tools
-softwareupdate --all --install --force
+# softwareupdate --all --install --force
 
 echo "Done!"
